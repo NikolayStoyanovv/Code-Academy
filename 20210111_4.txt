@@ -1,14 +1,18 @@
-﻿#include <stdio.h>
-int vzemiBitna(int number,int index);
+4) Създайте функция vdigniBitNa. Тя получава
+следните параметри - число и индекс. Функцията трябва
+да "вдига" бита на съответния индекс в числото (под
+"вдига" ще разбираме да му присвои стойност 1).
+#include <stdio.h>
+int vdigniBitNa(int number,int index);
 int main(int argc, char *argv[]){
     int a,b;
     a=4;
     b=2;
-    int rez=vzemiBitna(a,b);
+    int rez=vdigniBitNa(a,b);
 printf("%d",rez);
 return 0;
 }
-int vzemiBitna(int number,int index){
+int vdigniBitNa(int number,int index){
     int b=1; 
     int mask = 1 << index; 
     return (number & ~mask) | ((b << index) & mask); 

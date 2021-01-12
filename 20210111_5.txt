@@ -1,14 +1,18 @@
-﻿#include <stdio.h>
-int vzemiBitna(int number,int index);
+5) Създайте функция obarniBitNa. Тя получава
+следните параметри - число и индекс. Като резултат
+функцията обръща бита на съответната позиция в
+числото (съответно от 0 на 1 или от 1 на 0).
+#include <stdio.h>
+int obarniBitNa(int number,int index);
 int main(int argc, char *argv[]){
     int a,b;
     a=5;
     b=2;
-    int rez=vzemiBitna(a,b);
+    int rez=obarniBitNa(a,b);
 printf("%d",rez);
 return 0;
 }
-int vzemiBitna(int number,int index){
+int obarniBitNa(int number,int index){
    
     int mask = 1 << index; 
     return (number ^ mask) ; 

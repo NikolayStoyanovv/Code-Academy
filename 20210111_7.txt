@@ -1,14 +1,16 @@
-﻿#include <stdio.h>
-int vzemiBitna(int number);
+7) Занулете всички битове на числата, намиращи се на
+четна позиция.
+#include <stdio.h>
+int zanuliBitna(int number);
 int main(int argc, char *argv[]){
     int a,b;
     a=2;
     b=2;
-    int rez=vzemiBitna(a);
+    int rez=zanuliBitna(a);
 printf("%d",rez);
 return 0;
 }
-int vzemiBitna(int number){
+int zanuliBitna(int number){
     
     int mask = 1 <<number%2; 
     return (number ^ mask); 

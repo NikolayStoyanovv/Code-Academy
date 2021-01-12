@@ -1,4 +1,7 @@
-﻿#include <stdio.h>
+﻿Създайте функция vzemiBitna. Функцията получава
+параметър число и индекс. Тя връща стойността на бита
+на съответния индекс
+ #include <stdio.h>
 void vzemiBitna(int number,int index);
 int main(int argc, char *argv[]){
     int a,b;

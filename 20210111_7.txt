@@ -1,0 +1,15 @@
+﻿#include <stdio.h>
+int vzemiBitna(int number);
+int main(int argc, char *argv[]){
+    int a,b;
+    a=2;
+    b=2;
+    int rez=vzemiBitna(a);
+printf("%d",rez);
+return 0;
+}
+int vzemiBitna(int number){
+    
+    int mask = 1 <<number%2; 
+    return (number ^ mask); 
+} 

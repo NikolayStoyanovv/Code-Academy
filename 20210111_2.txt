@@ -1,0 +1,26 @@
+﻿#include <stdio.h>
+void vzemiBitna(int number,int index);
+int main(int argc, char *argv[]){
+    int a,b;
+    a=4;
+    b=2;
+    vzemiBitna(a,b);
+
+return 0;
+}
+void vzemiBitna(int number,int index){ 
+int c, k;
+ 
+  for (c = 31; c >= 0; c--)
+  {
+    k = number >> c;
+    if(k==index){
+    if (k & 1)
+      printf("1");
+    else
+      printf("0");
+  }
+  }
+
+  printf("\n");  
+} 

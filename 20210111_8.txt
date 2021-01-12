@@ -1,0 +1,19 @@
+#include <stdio.h>
+int vzemiBitna(int number);
+int main(int argc, char *argv[]){
+    
+    int a;
+    a=4;
+    vzemiBitna(a);
+return 0;
+}
+int vzemiBitna(int number){
+    int highest=0;
+    for( int i=0; i<31; i++)
+    {
+        /* If current bit is set */
+        if((number>>i) & 1)
+            highest= i;
+    }if (highest != -1)
+        printf("Highest order set bit in %d is %d", number, highest);
+} 

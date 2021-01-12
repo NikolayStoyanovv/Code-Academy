@@ -1,14 +1,16 @@
-﻿#include <stdio.h>
-int vzemiBitna(int number,index);
+10) Премахнете всички битове на число след n-тия бит
+включително.
+#include <stdio.h>
+int eraseBitna(int number,index);
 int main(int argc, char *argv[]){
     int a,b;
     a=15;
     b=3;
-    int rez=vzemiBitna(a);
+    int rez=eraseBitna(a);
 printf("%d",rez);
 return 0;
 }
-int vzemiBitna(int number,int index){
+int eraseBitna(int number,int index){
     for(int index=0;index<31;index++){
     int b=0; 
     int mask = 1 << index; 

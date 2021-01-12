@@ -1,0 +1,17 @@
+﻿6) Променете стойността на бита на дадено число на
+определена позиция.
+#include <stdio.h>
+int zanuliBitna(int number);
+int main(int argc, char *argv[]){
+    int a,b;
+    a=2;
+    b=2;
+    int rez=zanuliBitna(a);
+printf("%d",rez);
+return 0;
+}
+int zanuliBitna(int number){
+    
+    int mask = 1 <<number; 
+    return (number ^ mask); 
+} 

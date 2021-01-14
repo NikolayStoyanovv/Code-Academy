@@ -1,0 +1,9 @@
+﻿Упражнение 4: съберете 10 - 127
+#include<stdio.h>
+int main(){
+   short a=10;
+   short b=127;
+   short z=10-127;
+   printf("%hd",z);
+   return 0;
+}

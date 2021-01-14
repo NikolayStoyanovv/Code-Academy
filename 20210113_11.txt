@@ -1,0 +1,37 @@
+﻿11. Създайте С програма, която калкулира стойността на покупки в магазин за
+хранителни стоки. Клиентът може да закупи различна комбинация от продукти. В
+магазина има следните налични продукти и цени:
+Домати- 4.5 лв.за килограм, Брашно 1.80 лв. за килограм,
+Кисело мляко - 0.50 лв. за брой, Сладолед на фунийки 0.60 лв. броя
+Бонбони 1.50 лв. за килограм, Близалки 0.15 лв. за брой.
+
+#include<stdio.h>
+int main(){
+
+    float fTomatoWeight,flour,fTomatoPrice=4.50,flourPrice=1.5,yogurt,yogurtPrice=0.5;
+    float icecream,icecreamPrice=0.6,candyWeight,candyPrice=1.5;
+    float lollipops,lollipopsPrice=0.15;
+	printf("How many kilograms tomato? ");
+scanf("%f",&fTomatoWeight);
+
+float fTomatoTotal = fTomatoWeight*fTomatoPrice;
+	printf("How many kilograms flour? ");
+scanf("%f",&flour);
+float flourTotal=flour*flourPrice;
+	printf("How much yogurt do you want ? ");
+scanf("%f",&yogurt);
+float yogurtTotal=yogurt*yogurtPrice;
+	printf("How many kilograms icecream? ");
+scanf("%f",&icecream);
+float icecreamTotal=icecream*icecreamPrice;
+	printf("How many lollipops do you want? ");
+scanf("%f",&lollipops);
+float lollipopsTotal=lollipops*lollipopsPrice;
+printf("%f",fTomatoTotal);
+printf("%f",flourTotal);
+printf("%f",yogurtTotal);
+printf("%f",icecreamTotal);
+printf("%f",lollipopsTotal);
+
+return 0;
+}

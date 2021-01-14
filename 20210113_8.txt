@@ -1,0 +1,13 @@
+﻿8. Да прочетем какво се случва със стойността на променливата x:
+#include<stdio.h>
+int main(){
+char x = 8;
+    printf("%d\n",x);//8
+x = x -2;
+    printf("%d\n",x);//6
+x= x+ 6;
+    printf("%d\n",x);//12
+x= (x - 10) +2;
+    printf("%d\n",x);//4
+return 0;
+}

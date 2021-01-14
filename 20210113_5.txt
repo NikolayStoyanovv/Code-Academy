@@ -1,0 +1,15 @@
+﻿5. Използвайте функцията sizeof(),за да проверите размера
+на типа на вашата машина. Типове за проверка- integer, float,
+short int, unsigned long int
+#include<stdio.h>
+int main(){
+    int cValue=244;
+    printf("\n%d\n",sizeof(cValue));
+    float iValue=100.3;
+    printf("\n%d\n",sizeof(iValue));
+     short int lValue=11111111;
+    printf("\n%d\n",sizeof(lValue));
+ unsigned long int RValue=11111111;
+    printf("\n%d\n",sizeof(RValue));
+    return 0;
+}

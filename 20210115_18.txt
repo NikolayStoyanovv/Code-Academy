@@ -1,0 +1,49 @@
+﻿Задача 18 Довършете задачата за кемперите от миналия път като добавите
+променлива, в която да се събират парите, които клиентът дължи на компанията.
+Принтирайте резултата. Питайте клиента дали иска още налични продукти.
+#include<stdio.h>
+int main(){
+	short karavanaCount=3;
+	short kemperCount=3;
+	int karavanaPrice=90;
+	int kemperPrice=100;
+	int totalPrice=0;
+    int dopulnitelno=0;
+	int rez;
+do{
+printf("Ako zelaete karavana natisnete 1\n");
+printf("Ako zelaete kemper natisnete 2\n");
+scanf("%d",&rez);
+if(rez==1&&karavanaCount!=0){int dopulnitelno;
+karavanaCount--;
+printf("Jelaete li oshte neshto natisnete 3\n");
+scanf("%d",dopulnitelno);
+if(dopulnitelno==3&&dopulnitelno!=1){
+	dopulnitelno=1;
+	karavanaCount--;
+	totalPrice=karavanaPrice+(karavanaPrice*dopulnitelno);
+printf("%d",totalPrice);
+dopulnitelno=0;
+}
+while(dopulnitelno!=0);
+}else if(rez==2&&kemperCount!=0){int dopulnitelno;
+kemperCount--;
+printf("Jelaete li oshte neshto natisnete 4\n");
+scanf("%d",dopulnitelno);
+if(dopulnitelno==4){
+	dopulnitelno=1;
+	kemperCount--;
+	totalPrice=kemperPrice+(kemperPrice*dopulnitelno);
+printf("%d",totalPrice);
+dopulnitelno=0;
+}
+while(dopulnitelno!=0);
+}else{
+	printf("Molq opitaite otnovo");
+}
+printf("%d",totalPrice);
+}
+while(dopulnitelno!=0);
+
+return 0;
+}

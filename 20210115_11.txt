@@ -1,0 +1,26 @@
+﻿Задача 11. Ако имаме символен низ от символа char str[] = “Hello”;
+копирайте всеки един от неговите символи в низ, който да изглежда
+огледален на него. Ето така char rts[] = “ollaH”; и принтирайте
+резултата.
+
+#include <stdio.h>
+#include <string.h>
+int my_strlen(char s[]){
+    int i;
+
+    for (i = 0; s[i] != '\0'; i++){
+    
+    }
+    int a=i-1;
+    for( a;s[a]!='\0';--a){
+        printf("%c",s[a]);
+    }
+    
+
+}
+int main(){
+    char a[]="Hi";
+my_strlen(a);
+
+    return 0;
+}

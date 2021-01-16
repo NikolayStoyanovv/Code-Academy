@@ -1,0 +1,25 @@
+﻿Задача 17.* Към задача 16 да се добави втора функция, която изчислява
+лицето на елипса по зададени два параметъра ( Пи * A * B)
+#include <stdio.h>
+#include <string.h>
+const float PI=3.14159;
+
+void test(float radius){
+    float s=PI*(radius*radius);
+    printf("%f \n",s);
+}
+float elipsa(int a,int b){
+    float s=PI*(a*b);
+    printf("%f",s);
+return s;
+}
+
+int main(){
+    int a=1,b=4;
+  test(1);
+  test(1.5);
+  test(13);
+  elipsa(a,b);
+
+    return 0;
+}

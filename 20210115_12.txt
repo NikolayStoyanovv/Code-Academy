@@ -1,0 +1,23 @@
+﻿Задача 12. Ако имаме символен низ char str[] = “Hеllo”, заменете
+буквите l с х на същия символен низ и отпечатайте резултата на
+конзолата.
+
+#include <stdio.h>
+#include <string.h>
+int my_strlen(char s[]){
+    int i;
+
+    for (i = 0; s[i] != '\0'; i++){
+    if(s[i]=='l'){
+        s[i]='x';
+    }
+    printf("%c",s[i]);
+    }
+    
+}
+int main(){
+    char a[]="Hello";
+my_strlen(a);
+
+    return 0;
+}
